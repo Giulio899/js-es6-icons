@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  width: 100%;
+  height: 100vh;
+}
+
+
+
+
+/* Inizio header */
+.header-top {
+  height: 50px;
+  background-color: black;
+  display: flex;
+}
+
+/* Inizio header top left */
+.header-top .header-top-left {
+  height: 100%;
+  flex-basis: 20%;
+  padding: 0 20px;
+}
+
+.header-top-left .fa-democrat {
+  color: white;
+  font-size: 2.5em;
+  line-height: 50px;
+}
+
+.header-top .header-top-right {
+  height: 100%;
+  flex-grow: 1;
+}
+
+/* Inizio header top right */
+.header-top-right nav {
+  position: relative;
+}
+
+.header-top-right nav > ul {
+  display: flex;
+  justify-content: flex-end;
+  line-height: 50px;
+  font-size: 1.2em;
+
+}
+
+.header-top-right nav ul li {
+  list-style-type: none;
+  transition: background .2s;
+
+}
+
+.header-top-right nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 0 40px;
+  height: 100%;
+}
+
+.header-top-right nav ul li:hover {
+  background-color: #1DA1F2;
+}
+
+.header-top-right nav ul li ul {
+  position: absolute;
+  visibility: hidden;
+}
+
+.header-top-right nav ul li ul li a {
+  color: white;
+}
+
+.header-top-right nav ul li:hover ul {
+  background-color: #1DA1F2;
+  visibility: visible;
+}
+
+.header-top-right nav ul li ul li {
+  transition: background .2s;
+}
+
+.header-top-right nav ul li ul li:hover {
+  background-color: black;
+}
+
+/* header bottom */
+.header-bottom {
+  height: 60px;
+  background-color: rgb(251, 117, 41);
+}
+
+.header-bottom form {
+  line-height: 60px;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.header-bottom form label {
+  margin-right: 20px;
+  color: white;
+}
+
+.header-bottom form select {
+  font-size: .8em;
+  width: 150px;
+  padding: 5px 10px;
+  color: #333;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  border-radius: 5px;
+  /* remove default styling */
+  /* appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none; */
+
+  /* background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="50"><polygon points="0,0 100,0 50,50" style="fill:%23666666;" /></svg'); */
+}
+
+.header-bottom form select:focus,
+.header-bottom form select:hover {
+  outline: none;
+  border: 1px solid #bbb;
+}
+
+/* .header-bottom form select option {
+  color: white;
+} */
+
+/* Inizio main */
+main {
+  height: calc(100vh - 110px);
+  background-color: rgb(210, 210, 210);
+  overflow-y: auto;
+}
+
+main .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+main .container .box {
+  background-color: white;
+  flex-basis: calc(100% / 5 - 20px);
+  margin: 5px;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+main .container .box i {
+  font-size: 3em;
+  margin-bottom: 15px;
+}
+
+main .container .box h3 {
+  font-size: 1.5em;
+}
